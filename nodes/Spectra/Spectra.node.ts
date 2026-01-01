@@ -6,7 +6,7 @@ export class Spectra implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'spectra.fm',
 		name: 'spectra',
-		icon: { light: 'file:spectra.svg', dark: 'file:spectra.dark.svg' },
+			icon: 'file:spectra.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

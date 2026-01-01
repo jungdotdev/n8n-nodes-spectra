@@ -15,8 +15,17 @@ exports.projectListDescription = [
         description: 'Optional team ID to filter projects',
         routing: {
             send: {
-                type: 'query',
-                property: 'teamId',
+                preSend: [
+                    async function (requestOptions) {
+                        var _a;
+                        const teamId = this.getNodeParameter('teamId');
+                        if (teamId) {
+                            (_a = requestOptions.qs) !== null && _a !== void 0 ? _a : (requestOptions.qs = {});
+                            requestOptions.qs.teamId = teamId;
+                        }
+                        return requestOptions;
+                    },
+                ],
             },
         },
     },

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### 1.0.7 - 2026-01-01
+
+- Skip empty team filters on Project list requests.
+- Use a static node icon to improve display in n8n.
+
 #### 1.0.6 - 2026-01-01
 
 - Rename package scope to `@spectrafm` to satisfy n8n node type parsing.

@@ -15,8 +15,18 @@ export const projectListDescription: INodeProperties[] = [
 		description: 'Optional team ID to filter projects',
 		routing: {
 			send: {
-				type: 'query',
-				property: 'teamId',
+				preSend: [
+					async function (requestOptions) {
+						const teamId = this.getNodeParameter('teamId') as string;
+
+						if (teamId) {
+							requestOptions.qs ??= {};
+							requestOptions.qs.teamId = teamId;
+						}
+
+						return requestOptions;
+					},
+				],
 			},
 		},
 	},
