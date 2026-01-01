@@ -1,5 +1,5 @@
 {
-	"node": "@spectra.fm/n8n-nodes-spectra",
+	"node": "n8n-nodes-base.spectra",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Developer Tools"],

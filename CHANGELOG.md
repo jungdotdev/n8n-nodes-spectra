@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### 1.0.4 - 2026-01-01
+
+- Align codex node identifier with n8n documentation.
+
 #### 1.0.3 - 2026-01-01
 
 - Restore node metadata to use the package name (fixes unrecognized node type).
