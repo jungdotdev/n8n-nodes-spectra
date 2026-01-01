@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### 1.0.8 - 2026-01-01
+
+- Swap node icon to the spectra.fm logo mark.
+
 #### 1.0.7 - 2026-01-01
 
 - Skip empty team filters on Project list requests.

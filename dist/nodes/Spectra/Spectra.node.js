@@ -9,7 +9,7 @@ class Spectra {
         this.description = {
             displayName: 'spectra.fm',
             name: 'spectra',
-            icon: 'file:spectra.svg',
+            icon: 'file:spectra-logo.png',
             group: ['transform'],
             version: 1,
             subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
